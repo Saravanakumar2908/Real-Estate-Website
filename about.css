@@ -1,0 +1,227 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.homeaboutdiv{
+    flex-grow: unset!important;
+}
+
+.c-approch {
+    box-shadow: 1px 1px 1px 10px wheat;
+
+}
+
+.navdivimg {
+    height: 600px;
+    background-image: url(aboutnavimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+
+
+}
+
+.subnav {
+    padding-top: 180px;
+    /* padding-bottom: 100px;  */
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid black;
+}
+
+/* .cursor-pointer:hover {
+    border-bottom: 2px solid darkred;
+    color: orangered;
+} */
+
+.fromdiv {
+    position: absolute;
+    top: 80px;
+    left: 130px;
+    padding-bottom: 20px;
+    /* min-height: 100px; */
+}
+
+.input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.video {
+    height: 600px;
+    width: 80%;
+    object-fit: cover;
+
+}
+
+.img:hover {
+    scale: 1.1;
+}
+
+.link {
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover {
+    border-bottom: 2px solid deeppink;
+    color: orangered;
+}
+
+.aboutimg {
+    animation-name: aboutimg;
+    /* animation-timeline: view(); */
+    /* animation-range: entry cover; */
+    animation-duration: 5s;
+    /* position: absolute;      */
+}
+
+.aboutcontant {
+    animation-name: aboutcontant;
+    animation-duration: 5s;
+    /* animation-timeline: view(); */
+    /* animation-range: entry cover; */
+}
+
+.aboutus {
+    animation-name: aboutus;
+    animation-timeline: view();
+    animation-range: entry cover;
+    animation-duration: 5s;
+}
+
+.instalogo:hover {
+    color: #ec088d;
+}
+
+.youtubelogo:hover {
+    color: red;
+}
+
+.facebooklogo:hover {
+    color: blue;
+}
+
+.quicklinks>a:hover {
+    color: orangered;
+    text-decoration: none;
+}
+
+.uparrow {
+    padding: 5px;
+    font-size: 30px;
+    background-color: aqua;
+    color: black;
+
+}
+
+.uparrow:hover {
+    background-color: pink;
+    color: orangered;
+    border-radius: 50%;
+}
+.quicklinks:hover{
+           text-decoration: none;
+           color: orangered;
+}
+
+
+@keyframes aboutimg {
+    from {
+        transform: translate(-300px);
+    }
+
+    to {
+        transform: translate(0px);
+
+    }
+}
+
+@keyframes aboutcontant {
+    from {
+        transform: translateX(300px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes aboutus {
+    from {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+/* //////////////Responsive//////////////////////////////////////////////////////// //////*/
+@media only screen and (min-width:320px) and (max-width:600px) {
+    .aboutrow {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .aboutus {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .video {
+        height: 600px;
+    }
+
+    .fromdiv {
+
+        position: absolute;
+        top: 30px;
+        left: 40px;
+        padding-bottom: 10px;
+
+    }
+    .copy{
+           flex-direction: column;
+           text-align: center;
+    }
+    @keyframes aboutus {
+        from {
+            transform: translate(-95px);
+        }
+
+        to {
+            transform: translate(0px);
+
+        }
+    }
+}

@@ -1,0 +1,95 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.navbar{
+      display: flex;
+      justify-content: space-between;
+      
+     
+}
+.navdivimg{
+             height: 600px;  
+            background-image: url(contactnavimg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+         
+
+}
+.homeaboutdiv{
+    flex-grow: unset!important;
+}
+ .subnav{
+          padding-top: 180px;
+          /* padding-bottom: 100px;  */
+ }
+.cursor-pointer{
+        cursor: pointer;
+}
+input{
+        padding: 5px;
+        border: none;
+        border-bottom: 2px solid black;
+        width: 100%;
+}
+textarea{
+           border: none;
+           border-bottom: 2px solid black;
+           width: 100%;
+}
+.copy{
+    display: flex;
+    justify-content: space-between;
+    border-top:1px solid black;
+}
+.link{
+    text-decoration: none; 
+    color: white;
+}
+.link:hover{
+          border-bottom:2px solid deepskyblue;
+          color: rgb(255, 0, 251) ;
+}
+.contactinfo{
+                animation-name:contactinfo;
+                animation-duration: 5s;
+}
+.contactinput{
+               animation-name: contactinput;
+               animation-duration: 5s;
+}
+.instalogo:hover{
+    color:deeppink;
+
+}
+.youtubelogo:hover{
+color:red;
+}
+.facebooklogo:hover{
+color:blue;
+}
+@keyframes contactinfo{
+    from {
+        transform: translate(-400px);
+    }
+
+    to {
+        transform: translate(0px);
+
+    }
+}
+
+@keyframes contactinput {
+    from {
+        transform: translateX(400px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
